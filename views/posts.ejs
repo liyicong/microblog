@@ -1,0 +1,13 @@
+<div class="card-columns">
+	<% posts.forEach(function(post, index) { %>
+	    <div class="card card-block card-inverse card-info text-xs-center">
+	      <h3 class="card-title"><%= post.user %></h3>
+	      <p class="card-text"><%= post.post %></p>
+	      <footer>
+	      	<small class="text-muted">
+	      		<%= post.time.toDateString() %>
+	      	</small>
+	      </footer>
+	    </div>
+	<% }) %>
+</div>

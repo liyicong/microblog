@@ -1,0 +1,11 @@
+<% if(!user) {%>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="display-3">欢迎来到Microblog</h1>
+		<div class="lead">Microblog是一个基于Node.js的微博系统。</div>
+	</div>
+</div>
+<% } else { %>
+	<%- partial('say') %>
+	<%- partial('posts',{posts: posts}) %>
+<% } %>
